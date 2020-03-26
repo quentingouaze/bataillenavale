@@ -1,11 +1,20 @@
 package bataille;
 
 import java.util.ArrayList;
-public class BateauEntity {
+public class Bateau{
 
     private int[]startPosition=new int[2];
     private int size;
     private String direction;
+
+    public  Bateau(String direction, int size,int x, int y){
+        int position[]= new int[2];
+        position[0]=x;
+        position[1]=y;
+        this.startPosition=position;
+        this.size=size;
+        this.direction=direction;
+    }
 
     public int[] getPosition(){
         return startPosition;
