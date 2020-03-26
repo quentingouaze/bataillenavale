@@ -18,6 +18,14 @@ public class BateauEntity {
         return direction;
     }
 
-
+    public void setDirection(String direction){
+        this.direction=direction;
+    }
+    public void setSize(int size){
+        this.size=size;
+    }
+    public void setPosition(ArrayList<Integer> startPosition){
+        this.startPosition=startPosition;
+    }
 
 }
