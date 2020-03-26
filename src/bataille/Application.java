@@ -1,5 +1,6 @@
 package bataille;
 
+import java.util.Arrays;
 import java.util.ArrayList;
 
 public class Application {
@@ -13,6 +14,11 @@ public class Application {
             pos[1]=4;
             bateau1.setPosition(pos);
             bateau1.setDirection("up");
-        }
+
+        System.out.println(bateau1.getDirection());
+        System.out.println(bateau1.getSize());
+        System.out.println(Arrays.toString(bateau1.getPosition()));
     }
-}
+
+    }
+
