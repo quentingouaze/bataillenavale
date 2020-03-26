@@ -1,14 +1,13 @@
 package bataille;
 
 import java.util.ArrayList;
-
 public class BateauEntity {
 
-    private ArrayList<Integer> startPosition;
+    private int[]startPosition=new int[2];
     private int size;
     private String direction;
 
-    public ArrayList<Integer> getPosition(){
+    public int[] getPosition(){
         return startPosition;
     }
     public int getSize(){
@@ -24,7 +23,7 @@ public class BateauEntity {
     public void setSize(int size){
         this.size=size;
     }
-    public void setPosition(ArrayList<Integer> startPosition){
+    public void setPosition(int[] startPosition){
         this.startPosition=startPosition;
     }
 
