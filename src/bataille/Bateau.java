@@ -16,41 +16,42 @@ public class Bateau {
                        if((coordonnees.getY()-modele.getSize())<battlefield.getyMin()){
                            System.out.println("Coordonnées Y min invalides");
                        }else{
-                           System.out.println("Coordonnées Y min valides");
-
+                           System.out.println("Coordonnées valides");
+                           this.createBateau(coordonnees,modele,direction);
                        }
                        break;
                    case Left:
                        if((coordonnees.getX()-modele.getSize())<battlefield.getxMin()){
                            System.out.println("Coordonnées X min Invalides");
                        }else{
-                           System.out.println("Coordonnées X min valides");
-
+                           System.out.println("Coordonnées valides");
+                           this.createBateau(coordonnees,modele,direction);
                        }
                        break;
                    case Up:
                        if((coordonnees.getY()+modele.getSize())>battlefield.getyMax()){
                            System.out.println("Coordonnées Y max Invalides");
                        }else{
-                           System.out.println("Coordonnées Y max valides");
-
+                           System.out.println("Coordonnées valides");
+                           this.createBateau(coordonnees,modele,direction);
                        }
                        break;
                    case Right:
                        if((coordonnees.getX()+modele.getSize())>battlefield.getxMax()){
                            System.out.println("Coordonnées X max Invalides");
                        }else{
-                           System.out.println("Coordonnées X max valides");
-
+                           System.out.println("Coordonnées valides");
+                           this.createBateau(coordonnees,modele,direction);
                        }
                        break;
                }
-
-           System.out.println("Start Position OK");
        }
-     this.coordonnees=coordonnees;
-     this.modele=modele;
-     this.direction=direction;
+
+    }
+    private void createBateau(Coordonnees coordonnees, Modele modele, Direction direction){
+        this.coordonnees=coordonnees;
+        this.modele=modele;
+        this.direction=direction;
     }
     public Direction getDirection() {
         return direction;
