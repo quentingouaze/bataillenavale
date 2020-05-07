@@ -2,31 +2,25 @@ package bataille;
 
 import java.util.ArrayList;
 import coordonnees.Coordonnees;
+import coordonnees.Direction;
 public class Bateau {
-    private Coordonnees startPosition;
-    private String direction;
-    public Bateau (int x, int y, String direction, int length){
-        setPosition(new Coordonnees(x,y));
-        setDirection(direction);;
-        setLength(length);
+    private Coordonnees coordonnees;
+    private Direction direction;
+    private Modele modele;
+    public Bateau (Direction direction, Modele modele){
+     //this.coordonnees=coordonnees;
+     this.modele=modele;
+     this.direction=direction;
     }
-    private int length;
-    public void setDirection(String direction) {
-        this.direction = direction;
-    }
-    public void setPosition(Coordonnees coordonnees){
-        this.startPosition = coordonnees;
-    }
-    public Coordonnees getPosition() {
-        return startPosition;
-    }
-    public String getDirection() {
+    public Direction getDirection() {
         return direction;
     }
-    public void setLength(int length){
-        this.length=length;
+
+    public Modele getModele() {
+        return modele;
     }
-    public int getLength(){
-        return length;
+
+    public Coordonnees getCoordonnees() {
+        return coordonnees;
     }
 }

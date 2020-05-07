@@ -6,6 +6,7 @@ public class Coordonnees {
     private int y;
     public boolean coordonneesInRange(int x, int y){
         if(x<0||x>20||y<0||y>20){
+            // Find how to use class Range to replace 0 and 20 values
             return false;
         }
         return true;
