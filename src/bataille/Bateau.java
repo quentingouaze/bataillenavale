@@ -1,40 +1,32 @@
 package bataille;
 
 import java.util.ArrayList;
-public class Bateau{
-
-    private int[]startPosition=new int[2];
-    private int size;
+import coordonnees.Coordonnees;
+public class Bateau {
+    private Coordonnees startPosition;
     private String direction;
-
-    public  Bateau(String direction, int size,int x, int y){
-        int position[]= new int[2];
-        position[0]=x;
-        position[1]=y;
-        this.startPosition=position;
-        this.size=size;
-        this.direction=direction;
+    public Bateau (int x, int y, String direction, int length){
+        setPosition(new Coordonnees(x,y));
+        setDirection(direction);;
+        setLength(length);
     }
-
-    public int[] getPosition(){
+    private int length;
+    public void setDirection(String direction) {
+        this.direction = direction;
+    }
+    public void setPosition(Coordonnees coordonnees){
+        this.startPosition = coordonnees;
+    }
+    public Coordonnees getPosition() {
         return startPosition;
     }
-    public int getSize(){
-        return size;
-    }
-    public String getDirection(){
+    public String getDirection() {
         return direction;
     }
-
-    public void setDirection(String direction){
-        this.direction=direction;
+    public void setLength(int length){
+        this.length=length;
     }
-    public void setSize(int size){
-        this.size=size;
+    public int getLength(){
+        return length;
     }
-    public void setPosition(int[] startPosition){
-        this.startPosition=startPosition;
-    }
-
-
 }
