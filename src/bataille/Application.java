@@ -17,7 +17,7 @@ public class Application {
         System.out.println((bateau1.getCoordonnees()));
 
         Coordonnees d= new Coordonnees(8,8);
-        Bateau bateau2= new Bateau(d,Direction.Left,Modele.Large, battlefield);
+        Bateau bateau2= new Bateau(d,Direction.Up,Modele.Large, battlefield);
         System.out.println(bateau2.getDirection());
         System.out.println(bateau2.getModele());
         System.out.println(bateau2.getCoordonnees());

@@ -11,6 +11,41 @@ public class Bateau {
            System.out.println("Start position NOPE");
        }
        else{
+               switch (direction){
+                   case Down:
+                       if((coordonnees.getY()-modele.getSize())<battlefield.getyMin()){
+                           System.out.println("Coordonnées Y min invalides");
+                       }else{
+                           System.out.println("Coordonnées Y min valides");
+
+                       }
+                       break;
+                   case Left:
+                       if((coordonnees.getX()-modele.getSize())<battlefield.getxMin()){
+                           System.out.println("Coordonnées X min Invalides");
+                       }else{
+                           System.out.println("Coordonnées X min valides");
+
+                       }
+                       break;
+                   case Up:
+                       if((coordonnees.getY()+modele.getSize())>battlefield.getyMax()){
+                           System.out.println("Coordonnées Y max Invalides");
+                       }else{
+                           System.out.println("Coordonnées Y max valides");
+
+                       }
+                       break;
+                   case Right:
+                       if((coordonnees.getX()+modele.getSize())>battlefield.getxMax()){
+                           System.out.println("Coordonnées X max Invalides");
+                       }else{
+                           System.out.println("Coordonnées X max valides");
+
+                       }
+                       break;
+               }
+
            System.out.println("Start Position OK");
        }
      this.coordonnees=coordonnees;
