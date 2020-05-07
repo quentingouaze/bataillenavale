@@ -1,9 +1,9 @@
 package bataille;
 
 public enum Modele {
-    Petit(1),
-    Moyen(2),
-    Gros(3);
+    Small(1),
+    Medium(2),
+    Large(3);
     private int size;
 
     Modele(int size){

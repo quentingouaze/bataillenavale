@@ -7,8 +7,8 @@ public class Bateau {
     private Coordonnees coordonnees;
     private Direction direction;
     private Modele modele;
-    public Bateau (Direction direction, Modele modele){
-     //this.coordonnees=coordonnees;
+    public Bateau (Coordonnees coordonnees,Direction direction, Modele modele){
+     this.coordonnees=coordonnees;
      this.modele=modele;
      this.direction=direction;
     }

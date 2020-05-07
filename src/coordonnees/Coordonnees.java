@@ -20,6 +20,10 @@ public class Coordonnees {
             System.out.println("Coordonnées hors du champ de bataille");
         }
     }
+    @Override
+    public String toString(){
+        return "("+ x +" , "+ y+")";
+    }
     public void setX(int x){
         this.x=x;
     }
